@@ -1,8 +1,21 @@
-import logo from "./logo.png";
-import "./App.css";
+// import logo from './logo.png'
+import './App.scss'
+import { Routes, Route } from 'react-router-dom'
+import Layout from './components/Layout'
 
 function App() {
   return (
+    <>
+      <Routes>
+        <Route path="/" element={<Layout />}></Route>
+      </Routes>
+    </>
+  )
+}
+
+export default App
+
+/*
     <div className="App">
       <header className="App-header">
         <div className="Logo-parent">
@@ -42,7 +55,4 @@ function App() {
         </ul>
       </header>
     </div>
-  );
-}
-
-export default App;
+    */
