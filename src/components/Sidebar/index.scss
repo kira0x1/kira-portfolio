@@ -1,0 +1,128 @@
+.nav-bar {
+  // background-color: #ededed;
+  // box-shadow: #d2d2d2 1px 0px 10px 0px;
+  width: 158px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 3;
+  min-height: 500px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: center;
+
+  .logo {
+    display: block;
+    padding: 8px 0;
+
+    img {
+      display: block;
+      margin: 8px auto;
+      width: 80%;
+      height: auto;
+    }
+  }
+
+  nav {
+    display: block;
+    text-align: center;
+    height: 210px;
+    width: 100%;
+    // margin-left: 20px;
+    // flex-wrap: wrap;
+    // align-items: baseline;
+    // align-content: center;
+    // justify-content: flex-start;
+    // flex-direction: column;
+
+    a {
+      // float: left;
+      color: rgb(238, 133, 114);
+      font-size: 28px;
+      display: block;
+      line-height: 70px;
+      height: 70px;
+      position: relative;
+      text-decoration: none;
+
+      i {
+        transition: all 0.3s ease-out;
+      }
+
+      &:hover {
+        color: rgb(238, 133, 114);
+
+        svg {
+          opacity: 0;
+        }
+
+        &:after {
+          opacity: 1;
+        }
+      }
+
+      &:after {
+        content: '';
+        font-size: 12px;
+        letter-spacing: 2px;
+        position: absolute;
+        bottom: 0;
+        display: block;
+        width: 100%;
+        text-align: center;
+        opacity: 0;
+        transition: all 0.3s ease-out;
+      }
+
+      &:first-child {
+        &::after {
+          content: 'HOME';
+        }
+      }
+    }
+    a.about-link {
+      &:after {
+        content: 'ABOUT';
+      }
+    }
+
+    a.contact-link {
+      &:after {
+        content: 'CONTACT';
+      }
+    }
+
+    a.active {
+      svg {
+        color: #ff5b5b;
+      }
+    }
+  }
+
+  ul {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    display: block;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    margin: 0;
+
+    li {
+      a {
+        padding: 7px 0;
+        display: block;
+        font-size: 35px;
+        line-height: 36px;
+
+        &:hover svg {
+          color:rgb(255, 206, 197);
+        }
+      }
+    }
+  }
+}
