@@ -1,18 +1,18 @@
 .nav-bar {
-  // background-color: #ededed;
+  background-color: #ededed;
   // box-shadow: #d2d2d2 1px 0px 10px 0px;
   width: 158px;
-  height: 100%;
   position: absolute;
-  top: 0;
   z-index: 3;
   min-height: 500px;
   display: flex;
+  height: 100vh;
   justify-content: flex-start;
   align-items: center;
   flex-wrap: wrap;
   flex-direction: column;
   align-content: center;
+  
 
   .logo {
     display: block;
@@ -97,7 +97,8 @@
 
     a.active {
       svg {
-        color: #ff5b5b;
+        color: #66baff;
+        // color: #8e5c5c;
       }
     }
   }
@@ -120,7 +121,7 @@
         line-height: 36px;
 
         &:hover svg {
-          color:rgb(255, 206, 197);
+          color: rgb(255, 206, 197);
         }
       }
     }
