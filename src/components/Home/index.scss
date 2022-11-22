@@ -1,3 +1,7 @@
+@use '../../App';
+
+$hoverColor: #503d3d;
+
 .home-page {
   .text-zone {
     width: 50%;
@@ -5,7 +9,7 @@
   }
 
   h1 {
-    color: #8e5c5c;
+    color: App.$secondary-color;
     font-size: 50px;
     margin: 0;
     font-family: 'Consolas';
@@ -13,7 +17,7 @@
   }
 
   h2 {
-    color: #8e5c5c;
+    color: App.$secondary-color;
     font-size: 16px;
     margin-top: 20px;
     margin-left: 20px;
@@ -24,20 +28,20 @@
   }
 
   .flat-button {
-    color: #8e5c5c;
+    color: App.$secondary-color;
     font-size: 14px;
     font-weight: 400;
     letter-spacing: 2px;
     font-family: 'Consolas';
     text-decoration: none;
     padding: 10px 18px;
-    border: 1px solid #8e5c5c;
+    border: 1px solid App.$secondary-color;
     float: left;
     animation: fadeIn 0.8s 0.9s backwards;
     white-space: nowrap;
 
     &:hover {
-      background-color: #503d3d;
+      background-color: $hoverColor;
       border: none;
       color: #ffffff;
     }

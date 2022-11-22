@@ -1,3 +1,5 @@
+@use '../../App';
+
 .nav-bar {
   background-color: #ededed;
   // box-shadow: #d2d2d2 1px 0px 10px 0px;
@@ -12,7 +14,6 @@
   flex-wrap: wrap;
   flex-direction: column;
   align-content: center;
-  
 
   .logo {
     display: block;
@@ -40,7 +41,7 @@
 
     a {
       // float: left;
-      color: rgb(238, 133, 114);
+      color: App.$primary-color;
       font-size: 28px;
       display: block;
       line-height: 70px;
@@ -53,7 +54,7 @@
       }
 
       &:hover {
-        color: rgb(238, 133, 114);
+        color: App.$primary-color;
 
         svg {
           opacity: 0;
@@ -97,8 +98,7 @@
 
     a.active {
       svg {
-        color: #66baff;
-        // color: #8e5c5c;
+        color: App.$active-color;
       }
     }
   }
@@ -121,7 +121,7 @@
         line-height: 36px;
 
         &:hover svg {
-          color: rgb(255, 206, 197);
+          color: App.$highlight-color;
         }
       }
     }
