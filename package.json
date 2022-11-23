@@ -5,7 +5,7 @@
   "repository": "https://github.com/kira0x1/kira-portfolio.git",
   "author": "Kira <kira.eva@protonmail.com>",
   "license": "MIT",
-  "homepage": "https://kira0x1.github.io/kira-portfolio/",
+  "homepage": "https://www.kira.gg",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
