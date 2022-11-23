@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/kira-portfolio/static/css/main.ae75790b.css",
-    "main.js": "/kira-portfolio/static/js/main.3afe4753.js",
+    "main.js": "/kira-portfolio/static/js/main.405ca3de.js",
     "static/js/496.58c87e35.chunk.js": "/kira-portfolio/static/js/496.58c87e35.chunk.js",
     "static/media/logo.png": "/kira-portfolio/static/media/logo.b63d5e0bb71ad5c50c8a.png",
     "static/media/helvetica-neu.ttf": "/kira-portfolio/static/media/helvetica-neu.8a19678078a6b21c8057.ttf",
@@ -9,11 +9,11 @@
     "static/media/CoolveticaRg-Regular.woff2": "/kira-portfolio/static/media/CoolveticaRg-Regular.7d1f3b1dd46ad6557a17.woff2",
     "index.html": "/kira-portfolio/index.html",
     "main.ae75790b.css.map": "/kira-portfolio/static/css/main.ae75790b.css.map",
-    "main.3afe4753.js.map": "/kira-portfolio/static/js/main.3afe4753.js.map",
+    "main.405ca3de.js.map": "/kira-portfolio/static/js/main.405ca3de.js.map",
     "496.58c87e35.chunk.js.map": "/kira-portfolio/static/js/496.58c87e35.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ae75790b.css",
-    "static/js/main.3afe4753.js"
+    "static/js/main.405ca3de.js"
   ]
 }
