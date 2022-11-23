@@ -4,8 +4,6 @@
   margin: auto;
   display: flex;
   position: absolute;
-  left: 25vw;
-  top: 20vh;
 }
 
 .top-tags {
@@ -47,9 +45,8 @@
   .text-zone {
     position: absolute;
     left: 10%;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 35%;
+    top: 1vh;
+    width: 20vw;
     vertical-align: middle;
     display: table-cell;
     max-height: 90%;
