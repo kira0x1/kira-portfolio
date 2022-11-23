@@ -14,7 +14,8 @@
   animation-fill-mode: both;
 
   &:hover {
-    animation: rubberBand 1s;
+    animation: heartBeat 2s;
+    cursor: pointer;
     color: App.$active-color;
   }
 }

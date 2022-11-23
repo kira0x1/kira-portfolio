@@ -1,3 +1,4 @@
+import Logo from './Logo'
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import AnimatedLetters from '../AnimatedLetters'
@@ -5,7 +6,6 @@ import './index.scss'
 
 const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
-  const nameArray = 'kira'.split('')
 
   useEffect(() => {
     setTimeout(() => {
@@ -17,11 +17,7 @@ const Home = () => {
     <div className="container home-page">
       <div className="text-zone">
         <h1>
-          <AnimatedLetters
-            letterClass={letterClass}
-            strArray={nameArray}
-            idx={1}
-          />
+          <AnimatedLetters letterClass={letterClass} content={'kira'} idx={1} />
           <br />
         </h1>
         <h2>
@@ -34,6 +30,8 @@ const Home = () => {
           Contact Me
         </Link>
       </div>
+
+      <Logo />
     </div>
   )
 }
