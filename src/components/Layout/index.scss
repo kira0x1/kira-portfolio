@@ -1,3 +1,5 @@
+@use '../../App';
+
 .page {
   width: 100%;
   height: 100%;
@@ -50,9 +52,14 @@
     vertical-align: middle;
     display: table-cell;
     max-height: 90%;
+    color: App.$active-color;
+    font-size: 1.5rem;
+    line-height: 2rem;
 
     h1 {
-      font-size: 53px;
+      font-size: 10rem;
+      font-family: 'coolvetica';
+      color: App.$secondary-color;
     }
   }
 }
