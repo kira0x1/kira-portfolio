@@ -100,7 +100,12 @@
 
       &:after {
         content: '';
-        font-size: 0.5rem;
+        font-size: 0.9vw;
+
+        @media (max-width: 1000px) {
+          font-size: 0.5rem;
+        }
+
         letter-spacing: 2px;
         position: absolute;
         bottom: 0;
