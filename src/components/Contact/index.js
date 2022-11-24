@@ -17,8 +17,14 @@ const Contact = () => {
         <h1>
           <AnimatedLetters
             letterClass={letterClass}
-            content="Email me at kira.eva@protonmail.com"
+            content="Email me at "
             idx={1}
+          />
+          <AnimatedLetters
+            letterClass={letterClass}
+            content="kira.eva@protonmail.com"
+            idx={1}
+            elementId="email-text"
           />
           <br />
           <AnimatedLetters
