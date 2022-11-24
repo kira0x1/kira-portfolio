@@ -18,12 +18,20 @@ const Home = () => {
       <div className="text-zone">
         <h1>
           <AnimatedLetters letterClass={letterClass} content={'kira'} idx={1} />
-          <br />
         </h1>
+        <br />
         <h2>
-          Full-Stack Developer / Typescript
+          <AnimatedLetters
+            letterClass={letterClass}
+            content={'Full-Stack Developer / Typescript'}
+            idx={1}
+          />
           <br />
-          Discord bots / React / Electron
+          <AnimatedLetters
+            letterClass={letterClass}
+            content={'Discord bots / React / Electron'}
+            idx={1}
+          />
         </h2>
         <br />
         <Link to="/contact" className="flat-button">
