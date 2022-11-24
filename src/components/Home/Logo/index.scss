@@ -9,6 +9,11 @@
   margin: auto;
   // opacity: 0;
 
+  @media (max-width: 1000px) {
+    top: 15vh;
+    right: 5vw;
+  }
+
   .outline-logo {
     width: 100%;
     height: auto;
@@ -41,7 +46,7 @@
 .logo-outline {
   fill: none;
   stroke: #231f20;
-    stroke: #ed8f85;
+  stroke: #ed8f85;
   stroke-miterlimit: 1;
   stroke-width: 3.5px;
   z-index: -1;

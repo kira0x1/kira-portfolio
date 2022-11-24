@@ -8,11 +8,15 @@ $hoverColor: #503d3d;
     margin-left: 20vw;
     margin-top: 5vw;
     max-width: 90%;
+
+    @media (max-width: 1000px) {
+      margin-top: 15vh;
+    }
   }
 
   h1 {
     color: App.$secondary-color;
-    font-size: 50px;
+    font-size: 5vw;
     margin: 0;
     font-family: 'Consolas';
     font-weight: 600;
