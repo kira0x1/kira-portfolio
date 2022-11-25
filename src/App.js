@@ -6,7 +6,7 @@ import About from './components/About'
 import Contact from './components/Contact'
 
 function App() {
-  console.log('version: 1.0.2')
+  console.log('version: 1.0.3')
   return (
     <Routes>
       <Route path="/" element={<Layout />}>
