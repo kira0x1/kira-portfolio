@@ -3,9 +3,13 @@
 $hoverColor: #503d3d;
 
 .home-page {
+  .subtitle-text {
+    overflow-wrap: normal;
+  }
+
   .text-zone {
     width: 50%;
-    margin-left: 8vw;
+    margin-left: 15vw;
     margin-top: 10vh;
     max-width: 90%;
 

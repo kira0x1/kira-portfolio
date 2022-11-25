@@ -48,14 +48,13 @@
 }
 
 .text-zone {
-  position: absolute;
-  left: 10%;
-  top: 1vh;
+  margin: auto 10vw;
   width: 20vw;
   vertical-align: middle;
   display: table-cell;
   max-height: 90%;
   color: App.$active-color;
+
   font-size: 1.5rem;
   line-height: 2rem;
 

@@ -20,19 +20,13 @@ const Home = () => {
           <AnimatedLetters letterClass={letterClass} content={'kira'} idx={1} />
         </h1>
         <br />
-        <h2>
-          <AnimatedLetters
-            letterClass={letterClass}
-            content={'Full-Stack Developer / Typescript'}
-            idx={1}
-          />
-          <br />
-          <AnimatedLetters
-            letterClass={letterClass}
-            content={'Discord bots / React / Electron'}
-            idx={1}
-          />
-        </h2>
+        <div className="subtitle-text">
+          <h2>
+            Full-Stack Developer / Typescript
+            <br />
+            Discord bots / React / Electron
+          </h2>
+        </div>
         <br />
         <Link to="/contact" className="flat-button">
           Contact Me
