@@ -1,7 +1,15 @@
 .about-page {
-    .text-zone {
-        h1 {
-            font-size: 8rem;
-        }
+  .text-zone {
+    margin-left: 15vw;
+    margin-top: 3vh;
+    h1 {
+      font-size: 8rem;
     }
+  }
+
+  .text-content {
+    font-size: 2.2rem;
+    margin-left: 15px;
+    font-weight: 300;
+  }
 }

@@ -17,9 +17,13 @@ const About = () => {
         <h1>
           <AnimatedLetters content="About" letterClass={letterClass} idx={15} />
         </h1>
-        <p>meow</p>
-        <p>meow</p>
-        <p>meow</p>
+        <div className="text-content">
+          <p>meow</p>
+          <p>meow meow</p>
+          <p>meow meow meow</p>
+          <p>meow meow</p>
+          <p>meow</p>
+        </div>
       </div>
     </div>
   )
