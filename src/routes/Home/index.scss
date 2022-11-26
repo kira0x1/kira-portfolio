@@ -58,4 +58,15 @@ $hoverColor: #503d3d;
       color: #ffffff;
     }
   }
+
+  .work-container {
+    position: relative;
+    top: 10vh;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 8vw;
+  }
 }
