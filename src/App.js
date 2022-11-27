@@ -7,8 +7,7 @@ import Contact from './routes/Contact'
 import ReactGA from 'react-ga4'
 import usePageTracking from './hooks/usePageTracking'
 
-const measurementID = process.env.REACT_APP_ANALYTICS_ID
-ReactGA.initialize(measurementID)
+ReactGA.initialize('G-JS2MGGX8DL')
 ReactGA.send('pageview')
 
 function App() {
