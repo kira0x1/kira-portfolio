@@ -4,9 +4,19 @@ import Layout from './components/Layout'
 import Home from './routes/Home'
 import About from './routes/About'
 import Contact from './routes/Contact'
+import ReactGA from 'react-ga'
+import { useEffect } from 'react'
+
+const measurementID = process.env.REACT_APP_ANALYTICS_ID
+console.log(measurementID)
+ReactGA.initialize(measurementID)
 
 function App() {
-  console.log('version: 1.0.0')
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname + window.location.search)
+  }, [])
+
+  console.log('version: 1.1.0')
   return (
     <Routes>
       <Route path="/" element={<Layout />}>
