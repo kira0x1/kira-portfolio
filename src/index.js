@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals'
 import { HashRouter } from 'react-router-dom'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
+console.log('version: 1.1.4')
 
 root.render(
   <React.StrictMode>

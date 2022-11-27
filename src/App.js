@@ -13,7 +13,6 @@ ReactGA.send('pageview')
 
 function App() {
   usePageTracking()
-  console.log('version: 1.1.3')
   return (
     <Routes>
       <Route path="/" element={<Layout />}>
