@@ -29,13 +29,13 @@ const Contact = () => {
           <br />
           <AnimatedLetters
             letterClass={letterClass}
-            content="Meow, im still working on this site uwu"
+            content="Meow, im still working on this site"
             idx={1}
           />
           <br />
           <AnimatedLetters
             letterClass={letterClass}
-            content="While you're here try hovering over the text :3"
+            content="While you're here try hovering over the text"
             idx={1}
           />
         </h1>
