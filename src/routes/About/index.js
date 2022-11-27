@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import AnimatedLetters from '../AnimatedLetters'
+import AnimatedLetters from '../../components/AnimatedLetters'
 import './index.scss'
 
 const About = () => {

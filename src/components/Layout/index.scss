@@ -29,7 +29,7 @@
 }
 
 .container {
-  display: flex;
+  display: grid;
   width: 100vw;
   will-change: contents;
   height: 90%;

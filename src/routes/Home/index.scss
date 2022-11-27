@@ -58,4 +58,37 @@ $hoverColor: #503d3d;
       color: #ffffff;
     }
   }
+
+  .work-container {
+    position: relative;
+    top: 10vh;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 8vw;
+  }
+
+  .work-divider {
+    width: 85%;
+    margin: auto;
+    text-align: center;
+    height: 1px;
+    background-color: App.$secondary-color;
+    transform: translateX(4%);
+    margin-top: 8vh;
+  }
+
+  .work-title {
+    width: 100%;
+    margin: auto;
+    font-size: 1.5vw;
+    text-align: center;
+    margin-top: 4vh;
+    margin-bottom: -4vh;
+    font-family: 'Roboto mono';
+    letter-spacing: 2px;
+    font-weight: 1000;
+  }
 }
