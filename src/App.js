@@ -19,7 +19,7 @@ function App() {
     })
   }, [])
 
-  console.log('version: 1.1.1')
+  console.log('version: 1.1.2')
   return (
     <Routes>
       <Route path="/" element={<Layout />}>
