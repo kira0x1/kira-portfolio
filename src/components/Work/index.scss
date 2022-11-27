@@ -1,10 +1,44 @@
+@use '../../App';
+
+$background-color: rgb(102, 51, 61);
+$hover-color: rgb(229, 80, 97);
+$font-outline: rgb(30, 30, 30);
+$font-color: #fff;
+
 .work-box {
-  background-color: #555;
-  width: 40vw;
+  text-decoration: none;
+  background-color: $background-color;
+  font-weight: 1000;
+  width: 30vw;
   height: 40vh;
-  text-align: center;
   margin: 10px 10px;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  padding: 5px;
+  border-radius: 7px;
+  font-size: 1.2vw;
+  transition: padding 20ms ease-in;
+  margin-top: -2vh;
+
+  &:hover {
+    cursor: pointer;
+    padding: 4px;
+    background-color: $hover-color;
+  }
+
+  .inner-box {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    box-shadow: 0 0 5px 1px $background-color inset;
+
+    &:hover {
+      box-shadow: 0 0 5px 5px $hover-color inset;
+    }
+  }
+
+  .text-container {
+    color: $font-color;
+    font-family: 'Roboto mono';
+    padding: 10px 10px;
+  }
 }

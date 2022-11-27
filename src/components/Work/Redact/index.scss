@@ -1,0 +1,12 @@
+.redact {
+  background-color: white;
+
+  .inner-box {
+    box-shadow: none;
+    background-image: url('https://redact.dev/images/redact-white.gif');
+    .text-container {
+      color: black;
+      text-shadow: none;
+    }
+  }
+}
