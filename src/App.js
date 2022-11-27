@@ -8,7 +8,6 @@ import ReactGA from 'react-ga'
 import { useEffect } from 'react'
 
 const measurementID = process.env.REACT_APP_ANALYTICS_ID
-console.log(measurementID)
 ReactGA.initialize(measurementID)
 
 function App() {
