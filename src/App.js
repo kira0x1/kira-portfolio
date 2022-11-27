@@ -5,21 +5,15 @@ import Home from './routes/Home'
 import About from './routes/About'
 import Contact from './routes/Contact'
 import ReactGA from 'react-ga4'
-import { useEffect } from 'react'
+import usePageTracking from './hooks/usePageTracking'
 
 const measurementID = process.env.REACT_APP_ANALYTICS_ID
 ReactGA.initialize(measurementID)
 ReactGA.send('pageview')
 
 function App() {
-  useEffect(() => {
-    ReactGA.send({
-      hitType: 'pageview',
-      page: window.location.pathname + window.location.search,
-    })
-  }, [])
-
-  console.log('version: 1.1.2')
+  usePageTracking()
+  console.log('version: 1.1.3')
   return (
     <Routes>
       <Route path="/" element={<Layout />}>
