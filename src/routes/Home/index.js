@@ -3,9 +3,8 @@ import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import AnimatedLetters from '../../components/AnimatedLetters'
 import './index.scss'
+
 import Work from '../../components/Work'
-import Mikaela from '../../components/Work/Mikaela'
-import Redact from '../../components/Work/Redact'
 
 const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -39,8 +38,7 @@ const Home = () => {
       <div className="work-divider"></div>
       <div className="work-title">WORK</div>
       <div className="work-container">
-        <Mikaela />
-        <Redact />
+        <Work />
       </div>
     </div>
   )
