@@ -2,9 +2,6 @@
 
 .text-animate {
   display: inline-block;
-  opacity: 0;
-  animation: fadeIn 1s 1s;
-  animation-fill-mode: forwards;
   min-width: 10px;
 }
 
