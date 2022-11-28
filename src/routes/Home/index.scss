@@ -54,7 +54,7 @@ $hoverColor: #503d3d;
 
     &:hover {
       background-color: $hoverColor;
-      border: none;
+      border: 1px solid $hoverColor;
       color: #ffffff;
     }
   }
