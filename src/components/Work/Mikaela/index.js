@@ -1,4 +1,5 @@
 import './index.scss'
+import ReactGA from 'react-ga4'
 
 export default function Mikaela() {
   return (
@@ -7,6 +8,13 @@ export default function Mikaela() {
       rel="noreferrer"
       target="_blank"
       className="work-box mikaela"
+      onClick={() => {
+        ReactGA.event({
+          category: 'Work',
+          action: 'Mikaela Clicked',
+          label: 'Mikaela',
+        })
+      }}
     >
       <div className="inner-box">
         <div className="text-container">

@@ -1,4 +1,5 @@
 import './index.scss'
+import ReactGA from 'react-ga4'
 
 export default function Redact() {
   return (
@@ -7,6 +8,13 @@ export default function Redact() {
       rel="noreferrer"
       target="_blank"
       className="work-box redact"
+      onClick={() => {
+        ReactGA.event({
+          category: 'Work',
+          action: 'Redact Clicked',
+          label: 'Redact',
+        })
+      }}
     >
       <div className="inner-box">
         <div className="text-container">

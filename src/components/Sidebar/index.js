@@ -1,4 +1,5 @@
 import './index.scss'
+import ReactGA from 'react-ga4'
 import { Link, NavLink } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope, faHome, faUser } from '@fortawesome/free-solid-svg-icons'
@@ -37,7 +38,18 @@ const Sidebar = () => {
       </nav>
       <ul>
         <li>
-          <a target="_blank" rel="noreferrer" href="https://github.com/kira0x1">
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://github.com/kira0x1"
+            onClick={() => {
+              ReactGA.event({
+                category: 'Sidebar',
+                action: 'GithubBtn Clicked',
+                label: 'GithubBtn',
+              })
+            }}
+          >
             <FontAwesomeIcon icon={faGithub} color="#f7a194"></FontAwesomeIcon>
           </a>
         </li>
