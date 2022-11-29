@@ -66,6 +66,10 @@ $hoverColor: #503d3d;
     flex-wrap: wrap;
     justify-content: center;
     margin-left: 8vw;
+
+    @media (max-width: 700px) {
+      margin: auto;
+    }
   }
 
   .work-divider {

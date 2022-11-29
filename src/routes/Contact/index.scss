@@ -1,8 +1,14 @@
 @use '../../App';
 
+.contact-page {
+  .container {
+    display: flex;
+  }
+}
+
 .text-zone {
   width: 100%;
-  
+
   h1 {
     font-size: 3rem;
     @media (max-width: 1000px) {

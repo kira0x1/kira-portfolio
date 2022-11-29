@@ -12,17 +12,23 @@ const About = () => {
   }, [])
 
   return (
-    <div className="container about-page">
-      <div className="text-zone">
-        <h1>
-          <AnimatedLetters content="About" letterClass={letterClass} idx={15} />
-        </h1>
-        <div className="text-content">
-          <p>meow</p>
-          <p>meow meow</p>
-          <p>meow meow meow</p>
-          <p>meow meow</p>
-          <p>meow</p>
+    <div className="about-page">
+      <div className="container">
+        <div className="text-zone">
+          <h1>
+            <AnimatedLetters
+              content="About"
+              letterClass={letterClass}
+              idx={15}
+            />
+          </h1>
+          <div className="text-content">
+            <p>meow</p>
+            <p>meow meow</p>
+            <p>meow meow meow</p>
+            <p>meow meow</p>
+            <p>meow</p>
+          </div>
         </div>
       </div>
     </div>

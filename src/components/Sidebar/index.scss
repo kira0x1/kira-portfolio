@@ -23,8 +23,6 @@
 
   .logo {
     display: block;
-    max-width: 15vw;
-    max-height: 15vh;
     width: auto;
     height: auto;
     padding: 8px;
@@ -33,7 +31,6 @@
       padding: 0px 5px;
       margin: auto;
       height: 75%;
-      width: 100%;
       display: inline-block;
     }
 
@@ -50,19 +47,24 @@
   }
 
   nav {
-    display: block;
     text-align: center;
     height: 210px;
     width: 100%;
 
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+
     @media (max-width: 1000px) {
       height: 100%;
       width: 100%;
+
       display: flex;
       flex-direction: row;
-      flex-wrap: nowrap;
-      justify-content: flex-start;
-      align-items: flex-start;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
       text-align: center;
     }
 
@@ -70,11 +72,8 @@
       color: App.$primary-color;
       font-size: 2vw;
       display: block;
-      line-height: 10vh;
-      height: 10vh;
-      position: relative;
       text-decoration: none;
-      margin-left: 20px;
+      margin-bottom: 4vh;
 
       @media (max-width: 1000px) {
         width: 10vw;
@@ -83,10 +82,11 @@
         display: block;
         padding: 0px 10px;
         line-height: auto;
+        margin: auto;
       }
 
       i {
-        transition: all 0.3s ease-out;
+        transition: opacity 0.3s ease-out;
       }
 
       &:hover {
@@ -102,24 +102,31 @@
       }
 
       &:after {
+        transform: translateY(-3vh);
         content: '';
-        font-size: 0.9vw;
+        font-size: 1vw;
 
         @media (max-width: 1000px) {
-          font-size: 0.8rem;
+          font-size: 1vw;
         }
 
         letter-spacing: 2px;
-        position: absolute;
-        bottom: 0;
         display: block;
+        height: 100%;
+        justify-content: center;
         width: 100%;
         text-align: center;
         opacity: 0;
-        transition: all 0.3s ease-out;
+        transition: opacity 0.3s ease-out;
       }
 
       &:first-child {
+        margin-top: 4vh;
+
+        @media (max-width: 1000px) {
+          margin: auto;
+        }
+
         &::after {
           content: 'HOME';
         }
