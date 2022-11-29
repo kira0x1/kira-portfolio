@@ -1,6 +1,10 @@
 .about-page {
+  .container {
+    display: flex;
+  }
+
   .text-zone {
-    margin-left: 15vw;
+    margin-left: 12vw;
     margin-top: 3vh;
     h1 {
       font-size: 8rem;

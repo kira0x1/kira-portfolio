@@ -19,6 +19,13 @@ $font-color: #fff;
   transition: padding 20ms ease-in;
   margin-top: -2vh;
 
+  @media (max-width: 700px) {
+    width: 100%;
+    margin: auto;
+    margin-bottom: 4vh;
+    text-align: center;
+  }
+
   &:hover {
     cursor: pointer;
     padding: 4px;
