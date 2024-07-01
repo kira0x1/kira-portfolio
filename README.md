@@ -1,3 +1,3 @@
-# kira-portfolio
+# kira.gg
 
-my portfolio site :3
+my portfolio site 💖
